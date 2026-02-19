@@ -80,8 +80,3 @@ The design anticipates:
 - AI opponents implemented using the same `GameAction` types and validator/executor
 - Optional networking layer that sends serialized actions between client and server
 - Save/load, undo, statistics, and replay features (hook into `EndGameManager` and action history)
-
-## License
-
-This project is intended for educational and academic use.
-
