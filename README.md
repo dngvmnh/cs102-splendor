@@ -23,21 +23,30 @@ Console-based implementation of the board game **Splendor**, written in Java 17 
 Requirements:
 
 - Java 17+
-- Maven 3.8+
 
-Build and run:
+This repository no longer uses Maven; the source is a set of plain Java files that can be compiled
+with the standard JDK tools. No external dependencies are required.
 
-```bash
-mvn compile
-mvn exec:java -Dexec.mainClass="splendor.main.Main"
-```
+### Build with javac
 
-Or build a runnable JAR:
+From the project root run:
 
 ```bash
-mvn package
-java -jar target/splendor-console-1.0.0-SNAPSHOT.jar
+# Unix / WSL / Git Bash
+./build.sh
+# or on Windows
+build.bat
 ```
+
+That will compile all `.java` files under `src/main/java` into an `out` directory.
+
+### Run the game
+
+```bash
+java -cp out splendor.main.Main
+```
+
+(You can also use `./run.sh` or `run.bat` if you prefer the helper scripts.)
 
 ## Architecture Overview
 

@@ -1,0 +1,12 @@
+# build output
+out/
+
+# IDE files
+*.class
+*.log
+
+# helper scripts
+build.sh
+build.bat
+run.sh
+run.bat
